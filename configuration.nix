@@ -22,5 +22,10 @@ in {
       };
     };
   };
+  security.acme = {
+    acceptTerms = true;
+    defaults.email = "foo@bar.com";
+  };
+
   networking.firewall.allowedTCPPorts = [80 443];
 }
