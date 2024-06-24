@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    flakery.url = "github:getflakery/flakery";
+    flakery.url = "github:getflakery/flakes";
   };
 
   outputs = {
