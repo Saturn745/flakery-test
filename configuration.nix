@@ -8,8 +8,6 @@
     recommendedGzipSettings = true;
     recommendedProxySettings = true;
     virtualHosts."test-gh.4c9d7b.flakery.xyz" = {
-      forceSSL = true;
-      enableACME = true;
       locations."/" = {
         extraConfig = ''
           add_header Content-Type text/html;
@@ -20,10 +18,5 @@
       };
     };
   };
-  security.acme = {
-    acceptTerms = true;
-    defaults.email = "foo@bar.com";
-  };
-
-  networking.firewall.allowedTCPPorts = [80 443];
+  networking.firewall.allowedTCPPorts = [80];
 }
