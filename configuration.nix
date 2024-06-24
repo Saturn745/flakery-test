@@ -7,7 +7,7 @@
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
     recommendedProxySettings = true;
-    virtualHosts."testing2.52b353.flakery.xyz" = {
+    virtualHosts."test-gh.4c9d7b.flakery.xyz" = {
       forceSSL = true;
       enableACME = true;
       locations."/" = {
