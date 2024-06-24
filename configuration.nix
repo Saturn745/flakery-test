@@ -1,6 +1,4 @@
-{_}: let
-  flakeryDomain = builtins.readFile /metadata/flakery-domain;
-in {
+{...}: {
   system.stateVersion = "23.05";
 
   services.nginx = {
@@ -9,7 +7,7 @@ in {
     recommendedOptimizations = true;
     recommendedGzipSettings = true;
     recommendedProxySettings = true;
-    virtualHosts."${flakeryDomain}" = {
+    virtualHosts."testing2.52b353.flakery.xyz" = {
       forceSSL = true;
       enableACME = true;
       locations."/" = {
