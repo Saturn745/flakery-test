@@ -4,7 +4,7 @@
   services.nginx = {
     enable = true;
     recommendedTlsSettings = true;
-    recommendedOptimizations = true;
+    recommendedOptimisation = true;
     recommendedGzipSettings = true;
     recommendedProxySettings = true;
     virtualHosts."testing2.52b353.flakery.xyz" = {
